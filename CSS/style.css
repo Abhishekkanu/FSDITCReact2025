@@ -1,0 +1,64 @@
+
+
+/* h2{
+    background: brown;
+    color: white;
+} */
+
+
+
+/* h2,p,h3{
+    background: #81b963d6;
+    color: rgb(132, 23, 85);
+}
+
+#heading1{
+    font-size: 50px;
+} */
+
+
+
+/* child */
+/* div>p{
+    background: #26974d;
+} */
+
+
+/* sibling */
+/* div+p{
+    background: #9c1818;
+} */
+
+
+/* sibling working on all */
+
+div~p{
+    background: #b7df35;
+}
+
+/* p:hover{
+    background-color: aqua;
+    font-size: small;
+    color: red;
+} */
+
+p::after{
+    content: "react dev";
+    background: brown;
+    color: white;
+}
+
+p::before{
+    content: "hey";
+    background: brown;
+    color: white;
+}
+
+p::selection{
+    background: #0fdda3;
+}
+
+p:nth-child(2){
+    background: #ef0a9e;
+}
+
