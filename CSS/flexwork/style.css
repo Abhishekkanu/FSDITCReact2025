@@ -1,0 +1,35 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    background: aqua;
+    border: 1px solid red;
+    /* gap: 10px; */
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+}
+
+.child1{
+    height: 300px;
+    width: 300px;
+    background: greenyellow;
+    border: 1px dotted red;
+    /* order: 2; */
+}
+.child2{
+    height: 300px;
+    width: 300px;
+    background: rgb(242, 72, 199);
+    border: 1px dotted red;
+}
+.child3{
+    height: 300px;
+    width: 300px;
+    background: rgb(120, 143, 84);
+    border: 1px dotted red;
+}
+.child4{
+    height: 300px;
+    width: 300px;
+    background: rgb(228, 124, 26);
+    border: 1px dotted red;
+}
