@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function getData(){
+            // alert("Hii...reached!");
+            const myname=document.getElementsByClassName("username").value;
+            // alert("Hii...reached!"+myname);
+            document.getElementById('disp').innerHTML=`<h2>${myname}</h2>`;
+        }
+    </script>
+</head>
+<body>
+    <!-- <h2>ABES Engineering College</h2>
+    <script src="index.js"></script> -->
+
+    <!-- <label for="">Enter Name: </label><input type="text" id="username" placeholder="enter name">
+    <button onclick="getData()">Get Data</button>
+    <br>
+    <div id="disp">
+
+    </div> -->
+
+    <!-- <div>
+        <h2 align="center">User Info</h2>
+        <hr>
+    </div>
+    <div>
+        <p>Name : </p><input type="text" class="username" placeholder="enter name">
+        <p>Branch : </p><input type="text" class="username">
+        <p>Section : </p><input type="text" class="username">
+        <p>College : </p><input type="text" name="" class="username">
+        <p>Communication Address : </p><input type="text" class="username">
+        <p>Permanent Address : </p><input type="text" class="username">
+        <br>
+        <br>
+        <button onclick="getData()">Get Data</button>
+
+        <div id="disp">
+
+        </div>
+    </div> -->
+
+    <div class="container"></div>
+
+    <button id="btn">Get Data</button>
+
+    <div id="disp"></div>
+
+    <script src="index.js"></script>
+</body>
+</html>
