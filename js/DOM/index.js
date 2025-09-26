@@ -100,43 +100,117 @@
 // console.log(div);
 
 
-const container = document.getElementsByClassName('container');
+// const container = document.getElementsByClassName('container');
 
 // console.log(container);
 // container[0].innerHTML='<h2 style=color:red>Hello World</h2>'
 // console.dir(container)
 
-const h2 = document.createElement('h2');
-h2.innerText = "ABES Engineering College";
-h2.style.color = 'white';
-h2.style.backgroundColor = 'brown';
-console.log(h2);
-container[0].appendChild(h2);
+// const h2 = document.createElement('h2');
+// h2.innerText = "ABES Engineering College";
+// h2.style.color = 'white';
+// h2.style.backgroundColor = 'brown';
+// console.log(h2);
+// container[0].appendChild(h2);
+
+
+
+
+// const button = document.getElementById('btn');
+// console.log(button);
+
+// function msg() {
+//     // console.log("Hi, I m working on DOM");
+//     alert("hiii, i am using dom");
+//     document.getElementById('disp').innerHTML="<h>Loading Image...</h>"
+//     setTimeout(()=>{
+//     document.getElementById('disp').innerHTML="<h2>ABES Engineering College</h2>"
+
+//     const img = document.createElement('img');
+//     img.src = 'https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2023/03/copy-urls-tabs-featured-image.jpg';
+//     img.setAttribute('height', '300px');
+//     img.setAttribute('width', '400px');
+//     console.log(img);
+//     container[0].appendChild(img);
+//     },2000);
+// }
+// button.addEventListener('click', msg);
+// // button.addEventListener('click',()=>(msg()));
 
 
 
 
 
 
-const button = document.getElementById('btn');
-console.log(button);
 
-function msg() {
-    // console.log("Hi, I m working on DOM");
-    alert("hiii, i am using dom");
-    document.getElementById('disp').innerHTML="<h>Loading Image...</h>"
-    setTimeout(()=>{
-    document.getElementById('disp').innerHTML="<h2>ABES Engineering College</h2>"
+// // Blocking and Non-blocking code
 
-    const img = document.createElement('img');
-    img.src = 'https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2023/03/copy-urls-tabs-featured-image.jpg';
-    img.setAttribute('height', '300px');
-    img.setAttribute('width', '400px');
-    console.log(img);
-    container[0].appendChild(img);
-    },2000);
+// const button = document.getElementById('btn');
+// function longData(){
+//     console.log("start");
+//     for(i=0; i<10000;i++){
+//         console.log(i);
+//     }
+//     console.log("end");
+// }
+// button.addEventListener('click',longData);
 
 
+// console.log("start")
+// setTimeout(()=>{
+//     console.log("welcome to fsd")
+// },2000)
+// console.log("end")
+
+
+
+
+// // callback function
+// function greetmsg(myname){
+//     return "Hiii,"+myname+" welcome to abes college";
+// }
+
+// function msgHandler(msg,clbk){
+//     console.log(msg);
+//     const data = clbk(msg);
+//     return data;
+// }
+
+// const student = ["rahul","aman","vansh"];
+// student.forEach((name)=>{
+// console.log(msgHandler(name,greetmsg));
+// })
+// // const completemsg = msgHandler("hiii",greetmsg);
+// // console.log(completemsg);
+
+
+
+
+
+
+//Promise
+
+const mypromise = new Promise((resolve,reject)=>{
+const password = "786h%^";
+if(password.length>8){
+    resolve("password length is ok");
+}else{
+    reject("password length is not as per our policy");
 }
-button.addEventListener('click', msg);
-// button.addEventListener('click',()=>(msg()));
+});
+
+
+// mypromise.then((result)=>{console.log(result)})
+// .catch((err)=>(console.log(err)))
+// .finally(()=>{
+//     console.log("all the resources have closed successfully");
+// })
+
+async function handleData(){
+    const data = await mypromise;
+    console.log(data);
+    // const result = mypromise;
+    // console.log(result);
+}
+
+handleData();
