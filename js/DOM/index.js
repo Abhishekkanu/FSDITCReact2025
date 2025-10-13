@@ -239,7 +239,6 @@ async function fetchdata(){
 
     table+='</table>';
     disp.innerHTML=table;
-
 }
 button.addEventListener('click',fetchdata);
 
